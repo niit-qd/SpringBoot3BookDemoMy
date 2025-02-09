@@ -9,6 +9,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <packaging>pom</packaging>
+    <modules>
+        <module>chapter-09-message-queue-rabbitmq</module>
+    </modules>
 
     <artifactId>chapter-09-message-queue</artifactId>
 

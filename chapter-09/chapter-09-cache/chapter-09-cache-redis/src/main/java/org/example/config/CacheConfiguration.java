@@ -12,6 +12,10 @@ import java.time.Duration;
 @Slf4j
 @Configuration
 public class CacheConfiguration {
+    public CacheConfiguration() {
+        log.info("CacheConfiguration");
+    }
+
     @Bean
     public RedisCacheManagerBuilderCustomizer redisCacheManagerBuilderCustomizer() {
         return builder -> {
