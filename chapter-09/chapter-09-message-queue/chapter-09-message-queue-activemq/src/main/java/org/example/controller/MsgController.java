@@ -1,4 +1,4 @@
-package org.example;
+package org.example.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -17,11 +17,11 @@ public class MsgController {
 
     @RequestMapping("/send")
     public String sendMsg(@RequestParam("msg") String msg) {
-        jmsTemplate.convertAndSend("test-queue", msg);
+        jmsTemplate.convertAndSend("test-direct-exchange", msg);
         return "success";
     }
 
-    @JmsListener(destination = "test-queue")
+    @JmsListener(destination = "test-direct-exchange")
     public void receivedMsg(String msg) {
         log.info("receivedMsg {}", msg);
     }
