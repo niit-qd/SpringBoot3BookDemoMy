@@ -10,7 +10,9 @@
     </parent>
     <packaging>pom</packaging>
     <modules>
+        <module>chapter-09-message-queue-activemq</module>
         <module>chapter-09-message-queue-rabbitmq</module>
+        <module>chapter-09-message-queue-kafka</module>
     </modules>
 
     <artifactId>chapter-09-message-queue</artifactId>

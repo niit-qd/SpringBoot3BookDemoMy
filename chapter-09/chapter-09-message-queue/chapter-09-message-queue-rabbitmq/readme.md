@@ -1,6 +1,8 @@
 1. Windows下的运行方式
    需要使用超级用户执行。
+   ``` cmd
    sbin\rabbitmq-server.bat start
+   ```
 2. Erlang版本
    [Erlang Version Requirements](https://www.rabbitmq.com/docs/which-erlang)
 
@@ -17,4 +19,3 @@
    - Erlang
       [Download Erlang/OTP](https://www.erlang.org/downloads)
       [Erlang/OTP 27.2.2](https://www.erlang.org/patches/otp-27.2.2)
-

@@ -12,7 +12,6 @@
     <modules>
         <module>chapter-09-cache</module>
         <module>chapter-09-message-queue</module>
-        <module>chapter-09-message-queue/chapter-09-message-queue-activemq</module>
     </modules>
 
     <properties>
