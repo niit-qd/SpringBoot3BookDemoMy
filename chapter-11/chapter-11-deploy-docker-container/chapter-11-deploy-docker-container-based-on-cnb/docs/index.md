@@ -6,6 +6,7 @@
 
 1. [Packaging OCI Images](https://docs.spring.io/spring-boot/maven-plugin/build-image.html)
 2. 可以打开`spring-boot-maven-plugin-3.4.3.jar`，查找`META-INF\maven\plugin.xml`查看定义，或者查看其帮助文档`META-INF\maven\org.springframework.boot\spring-boot-maven-plugin\plugin-help.xml`。
+3. [再见 Dockerfile，拥抱新型镜像构建技术 Buildpacks](https://juejin.cn/post/7049980327464271886)
 
 ## 其它
 
