@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+
+spring:
+  session:
+    timeout: 30s
+  data:
+    redis:
+      host: 82.157.165.249
+      port: 6379

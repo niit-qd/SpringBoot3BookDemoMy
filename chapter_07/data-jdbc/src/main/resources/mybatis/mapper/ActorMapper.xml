@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mybatis.mapper.ActorMapper">
+
+    <resultMap id="ActorMap" type="Actor">
+        <id property="actorId" column="actor_id"/>
+        <result property="firstName" column="first_name"/>
+        <result property="lastName" column="last_name"/>
+    </resultMap>
+
+    <select id="findById" resultMap="ActorMap">
+        select * from actor where actor_id = #{actor_id}
+    </select>
+    <select id="findAll" resultMap="ActorMap">
+        select * from actor
+    </select>
+    <update id="updateFirstNameById">
+        update actor set
+        first_name = #{first_name}
+        where actor_id = #{actor_id}
+    </update>
+</mapper>

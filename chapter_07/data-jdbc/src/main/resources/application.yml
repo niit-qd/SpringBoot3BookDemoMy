@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.232.133:3306/sakila?useAffectedRows=true
+    username: root
+    password: MyNewPass4!
+  data:
+    redis:
+      host: 192.168.232.133
+      port: 6379
+      database: 0
+      username:
+      password:
+      client-type: jedis
+
+#mybatis:
+#  type-aliases-package: org.example.mybatis.entity
+#  mapper-locations:
+#    - classpath*:mybatis/mapper/*.xml
+#    - classpath*:mybatis-plus/mapper/*.xml
+mybatis-plus:
+  type-aliases-package: org.example.mybatis.entity
+  mapper-locations:
+    - classpath*:mapper/*.xml
+    - classpath*:mybatis-plus/mapper/*.xml
+
